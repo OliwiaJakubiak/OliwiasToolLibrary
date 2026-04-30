@@ -1,24 +1,24 @@
-# Game Feel Kit
+# Auto Material Setup 
 
 > Part of [Oliwia's Tool Library](https://github.com/OliwiaJakubiak/OliwiasToolLibrary) | [Tool Library Site](http://oliwia-tool-library.webflow.io)
 
-A component-based toolkit for adding juice, impact and polish to any Actor with one-click effect triggers.
+Automatically detect, wire and assign a full PBR material from a texture folder in a single click. 
 
 ---
 
 ## What it Does 
 
-Game Feel Kit is a modular, component-based plugin that lets you attach polished feedback effects to any Actor in your scene: screen shake, time dilation, hit stop, visual and audio triggers. Effects are configured via Data Assets and triggered from your own Blueprint logic or game events, with an in-editor preview buttons so you can test without entering Play mode. 
+Auto Material Setup scans a selected texture folder, automatically detects PBR texture maps based on configurable naming convention suffixes, generates a fully wired material , and optionally assigns it directly to a selected Static Mesh - all without leaving the editor.
 
 ---
 
 ## Key Features
 
-- Component-based - attach to any Actor with no project restructuring
-- Data Asset driven - configure effect parameters cleanly per slot
-- One-click effect triggers callable from Blueprint or C++
-- In-editor EUW preview buttons for testing without Play mode
-- Modular - use only the effects you need 
+- Automatic PBR texture detection via configurable naming convention suffixes
+- Full material generation with correctly wired texture inputs
+- Direct mesh assignment from within the tool
+- Configurable output folder
+- Material creation handled in C++ via UMaterialEditingLibrary for full reliability 
 
 ---
 
@@ -42,11 +42,10 @@ Game Feel Kit is a modular, component-based plugin that lets you attach polished
 
 ## How To Use 
 
-1. Add the **Game Feel Component** to any Actor in your scene
-2. Assign Data Assets to each effect slot in the Details panel (or use the defaults) 
-3. Call the trigger functions from your own Blueprint input or game logic
-4. Use the EUW preview buttons to test effects without entering Play mode 
-
+1. Select your texture folder (or individual textures) and optionally a Static Mesh in the Content Browser
+2. Adjust naming convention suffixes to match your texture naming if needed
+3. Set an output folder or leave blank for the default
+4. Hit **Generate Material** to auto-build and assign your PBR material 
 ---
 
 ## More 
