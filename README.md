@@ -35,7 +35,7 @@ A growing suite of production-ready Unreal Engine plugins built to streamline ga
 
 ## Installation 
 
-1. Download the plugin `.zip` form the relevant release on this page
+1. Download the plugin `.zip` from the relevant release on this page
 2. Extract the plugin folder into your project's `Plugins` directory (create it if it doesn't exist)
 3. Right-click your `.uproject` file and select **Generate Visual Studio project files**
 4. Open the project - Unreal will prompt you to build the plugin. Click **Yes**
@@ -43,15 +43,21 @@ A growing suite of production-ready Unreal Engine plugins built to streamline ga
 
 ---
 
+## Oliwia's DevTools Menu
+
+All tools in this library are accessible from a single **Oliwia's DevTools** menu added to the Unreal Engine toolbar. Once any plugin from the library is enabled in your project, the menu will appear in the editor. Serving you a central place to open any installed tool without hunting through the editor UI. 
+
+---
+
 ## Releases 
 
-Each plugin is versioned and releeased independently. Find individual plugin downloads under [Releases](../../releases)
+Each plugin is versioned and released independently. Find individual plugin downloads under [Releases](../../releases)
 
 ---
 
 ## About 
 
-Oliwia's Tool Library is a professional, developer-facing plugin suite designed around real game development workflows. Each tool is built to integrate cleanly into any UE5 project with minimal setup, focused on saving time, reducing friction, and maintaining industry-standrd practices.
+Oliwia's Tool Library is a professional, developer-facing plugin suite designed around real game development workflows. Each tool is built to integrate cleanly into any UE5 project with minimal setup, focused on saving time, reducing friction, and maintaining industry-standard practices.
 
 The library is actively maintained and continues to grow. For full showcases, feature breakdowns, and how-it-works documentation visit the [Tool Library Site](http://oliwia-tool-library.webflow.io)
 
